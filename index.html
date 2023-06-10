@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- links  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Santorini's Pizza</title>
+</head>
+
+<style>
+  body.debug .container,
+  body.debug .container-fluid {
+    outline: 2px double blue;
+    outline-offset: -2px;
+  }
+
+  body.debug .row {
+    outline: 2px dashed red;
+    outline-offset: -2px;
+  }
+
+  body.debug [class*="col-"] {
+    outline: 2px dotted forestgreen;
+    outline-offset: -3px;
+  }
+</style>
+
+<body class="">
+
+  <header class="container-fluid sticky-top">
+    <section class="row ">
+      <div class="col-12 text-start ps-2 ps-md-4 pt-1 pb-1">
+        <h1 class="text-white"><i class="mdi mdi-image-filter-hdr pe-sm-3"></i> Santorini's Pizza</h1>
+      </div>
+    </section>
+  </header>
+
+  <main class="container-fluid">
+    <!-- hero image  -->
+    <section class="row hero-img">
+      <div class="col-12 col-md-6 p-5 text-white">
+        <h3 class="ps-2 text-shadow">Get on our Slice List</h3>
+        <!-- form  -->
+        <form class="p-4 form-color rounded dropshadow icon-color">
+          <div class="form-row">
+            <div class="form-group col-md-6 p-2">
+              <label for="inputName"></label>
+              <input type="text" class="form-control " id="inputName" placeholder="Pizza Lover Name">
+            </div>
+            <div class="form-group col-md-6 p-2">
+              <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+            </div>
+            <div class="form-group col-md-6 p-2">
+              <input type="phone" class="form-control" id="inputPhone4" placeholder="Phone">
+            </div>
+          </div>
+          <div class="form-group p-2">
+            <input type="text" class="form-control" id="inputMessage" placeholder="Message ">
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label p-2" for="gridCheck">
+                By checking this box I agree to eat all the pizza
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-outline-dark pe-4 ps-4">Submit</button>
+        </form>
+        <!-- end of form -->
+      </div>
+
+      <div class="d-none d-md-flex col-md-6  mt-5 text-white flex-wrap align-content-start align-items-center p-5">
+        <div class="section-1-border p-4">
+          <h1 class="text-shadow">Gourmet in the Mountains</h1>
+          <p class="text-shadow">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates quae architecto
+            corporis velit
+            adipisci.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 2 -->
+    <!-- //NOTE - add position-relative back to section below -->
+    <section class="row align-items-center position-relative p-5 p-md-3 pepp-background">
+      <div class="order-2 order-md-1 col-12 col-md-5 text-white p-3 p-md-5 align-content-center ">
+        <h2>Where it starts- with the "Phyllis" sourdough start. </h2>
+        <p>We start with our very own sourdough pizza dough to make a crispy, chewy, delicious crust
+          incidunt sequi placeat, ad repellendus ducimus quas consequatur fugiat reiciendis.
+        </p>
+      </div>
+      <div
+        class="order-1 order-md-2 col-12 col-md-4 bg-white info-bullets ps-3 ps-md-4 pt-3 pb-3 dropshadow  align-content-center ">
+        <p class="fs-5"><i class="mdi mdi-pizza"></i> Great taste guaranteed </p>
+        <p class="fs-5"><i class="mdi mdi-cheese"></i> Fresh cheese from Olga the cow </p>
+        <p class="fs-5"><i class="mdi mdi-barley"></i> Our own homemade sourdough </p>
+        <p class="fs-5"><i class="mdi mdi-home-silo-outline"></i> Local farm-sourced ingredients</p>
+        <p class="fs-5"><i class="mdi mdi-barley-off"></i> Gluten Free options available </p>
+      </div>
+    </section>
+
+    <!-- section 3 -->
+
+    <section class="row justify-content-evenly">
+      <div class="col-12 col-md-4 d-flex mt-3 p-3 justify-content-evenly">
+        <img class="featured-pizza pt-3 pb-3" src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80
+          
+          " alt="picture of pizza">
+      </div>
+      <div class="col-12 col-md-6 p-md-5 mt-5">
+        <p class="fs-1 pt-md-5 ps-3 ps-md-5">
+          <i class="mdi mdi-image-filter-hdr"></i> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum
+          eligendi
+          recusandae repudiandae.
+        </p>
+
+        <p class="fs-5 pb-3 ps-3 ps-md-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, iusto
+          tempore
+          commodi
+          temporibus natus deserunt nobis, earum quae quos nulla nemo perspiciatis autem dolores cupiditate incidunt
+          nisi culpa? Laborum illum id earum numquam inventore ipsam cum vitae sit beatae delectus.</p>
+        <div class="text-end pe-5 pb-2">
+          <button class="btn btn-dark ps-5 pe-5 text-white">Lorem</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 4 -->
+
+    <section class="row bg-secondary  justify-content-evenly p-2 p-md-5 text-center">
+
+      <div class="order-2 order-md-1 col-12 col-md-3 bg-white rounded p-5 dropshadow mt-5 mb-5">
+        <p class="fs-5 text-black">
+          <i class="mdi mdi-format-quote-open fs-3 "></i>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <p class="fs-5 icon-color">lorem</p>
+        <p class="fs-5 icon-color">Croque monsieur, manchego. </p>
+      </div>
+      <div class="order-1 order-md-2 col-12 col-md-4 bg-white rounded pt-5 pb-5 p-md-5 dropshadow mt-2 mb-2">
+        <p class="fs-1 icon-color">
+          <i class="mdi mdi-star-circle"></i>
+          <i class="mdi mdi-star-circle"></i>
+          <i class="mdi mdi-star-circle"></i>
+        </p>
+        <p class="fs-5 text-black">
+          <i class="mdi mdi-format-quote-open fs-3 "></i>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aliquam, harum ut
+          excepturi eius accusamus!
+        </p>
+        <p class="fs-5 icon-color">lorem</p>
+        <p class="fs-5 icon-color">Danish fontina pecorino!</p>
+      </div>
+      <div class="order-3 col-12 col-md-3 bg-white rounded p-5 dropshadow mt-3 mt-md-5 mb-5">
+        <p class="fs-5 text-black">
+          <i class="mdi mdi-format-quote-open fs-3 "></i>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <p class="fs-5 icon-color">lorem</p>
+        <p class="fs-5 icon-color">Feta, cut the cheese.</p>
+      </div>
+    </section>
+
+    <!-- section 5 -->
+
+    <section class="row text-white p-3 p-md-5 pepp-background dopshadow">
+      <div class="col-12">
+        <h1>Lorem ipsum dolor.</h1>
+        <p class="fs-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt cumque quam perspiciatis
+          placeat ratione fugit itaque.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- footer  -->
+
+  <footer class="container-fluid">
+    <section class="row bg-secondary text-white p-3 p-md-5 text-center ">
+      <div class="col-12 ">
+        <p class="fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus adipisci dolore, officiis
+          quisquam accusantium animi.</p>
+      </div>
+    </section>
+  </footer>
+  <link rel="stylesheet" href="app.js">
+</body>
+
+</html>

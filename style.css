@@ -1,0 +1,95 @@
+:root {
+  --pepperoni: #c84e0e;
+  --cheese: #d8cdb9;
+  --basil: rgb(8, 115, 72);
+  --olive: rgb(52, 48, 48);
+}
+
+/* elements */
+
+header {
+  background-color: var(--pepperoni);
+  animation-name: header-animation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--basil);
+}
+
+/* classes */
+
+.form-color {
+  background-color: var(--cheese);
+}
+
+.dropshadow {
+  box-shadow: 1px 3px 5px var(--cheese);
+}
+
+.text-shadow {
+  text-shadow: 3px 3px var(--olive);
+}
+
+.icon-color {
+  color: var(--basil);
+}
+
+.section-1-border {
+  border-left: 5px solid var(--pepperoni);
+}
+
+.pepp-background {
+  background-color: var(--pepperoni);
+}
+
+.hero-img {
+  background-image: url(https://images.unsplash.com/photo-1593504049359-74330189a345?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=327&q=80);
+  min-height: 55vh;
+  background-size: cover;
+  background-position: 10% 53%;
+  background-repeat: no-repeat;
+}
+
+.info-bullets {
+  position: absolute;
+  top: 33%;
+  right: 9%;
+}
+
+.featured-pizza {
+  min-height: 40vh;
+  max-height: 208vh;
+  width: unset;
+}
+
+@keyframes header-animation {
+  from {
+    background-color: var(--basil);
+  }
+
+  to {
+    background-color: var(--olive);
+  }
+}
+
+@media (max-width: 768px) {
+  .featured-pizza {
+    justify-content: space-around;
+    max-height: 69vh;
+  }
+
+  .info-bullets {
+    position: relative;
+    top: 8%;
+    right: 0%;
+  }
+
+  .section-2 {
+    justify-content: center;
+  }
+
+}
